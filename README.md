@@ -11,7 +11,7 @@
     <img src="https://img.shields.io/badge/Discord-%40terboro-7289DA?style=for-the-badge&logo=discord&logoColor=white" alt="Discord">
   </a>
   <a href="https://github.com/YOUR_GITHUB_USERNAME">
-    <img src="https://img.shields.io/github/followers/YOUR_GITHUB_USERNAME?style=for-the-badge&logo=github&color=0D6EFD&labelColor=000000" alt="GitHub">
+    <img src="https://img.shields.io/github/followers/YOUR_GITHUB_USERNAME?style=for-the-badge&logo=github&color=f29102&labelColor=000000" alt="GitHub">
   </a>
 </div>
 
