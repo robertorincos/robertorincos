@@ -1,9 +1,9 @@
 <!-- Profile Header with Dynamic Text & Banner -->
 <div align="center">
 
-  ![Header](https://capsule-render.vercel.app/api?type=waving&color=f29102&height=200&section=header&text=terboro&fontSize=60&fontColor=ffffff&animation=fadeIn)
+  ![Header](https://capsule-render.vercel.app/api?type=waving&color=ff9d00&height=200&section=header&text=terboro&fontSize=60&fontColor=ffffff&animation=fadeIn)
 
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=%23f29102&center=true&vCenter=true&random=false&width=500&lines=Computer+Science+Student;Data+Analyst;Backend+Developer;AWS+Enthusiast;Always+Learning+New+Technologies" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=%23ff9d00&center=true&vCenter=true&random=false&width=500&lines=Computer+Science+Student;Data+Analyst;Backend+Developer;AWS+Enthusiast;Always+Learning+New+Technologies" alt="Typing SVG" />
 
   <br>
 
@@ -11,7 +11,7 @@
     <img src="https://img.shields.io/badge/Discord-%40terboro-7289DA?style=for-the-badge&logo=discord&logoColor=white" alt="Discord">
   </a>
   <a href="https://github.com/YOUR_GITHUB_USERNAME">
-    <img src="https://img.shields.io/github/followers/YOUR_GITHUB_USERNAME?style=for-the-badge&logo=github&color=f29102&labelColor=000000" alt="GitHub">
+    <img src="https://img.shields.io/github/followers/YOUR_GITHUB_USERNAME?style=for-the-badge&logo=github&color=ff9d00&labelColor=000000" alt="GitHub">
   </a>
 </div>
 
@@ -268,6 +268,6 @@ class ProfileInfo:
 
 <div align="center">
 
-  ![Footer](https://capsule-render.vercel.app/api?type=waving&color=f29102&height=120&section=footer)
+  ![Footer](https://capsule-render.vercel.app/api?type=waving&color=ff9d00&height=120&section=footer)
 
 </div>
