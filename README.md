@@ -1,7 +1,7 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=120&section=header&text=Welcome%20to%20My%20Profile&fontSize=40&fontColor=ffffff&animation=fadeIn&fontAlignY=35" alt="header"/>
 
 <h1 align="center">Hi there, I'm <a href="https://linkedin.com/in/YOUR-LINKEDIN" target="_blank">Terboro</a> </h1>
-<h3 align="center">CS Student | Intern @ Itaú | Aspiring Game Developer</h3>
+<h3 align="center">web dev  | trying to create cool stuff | Aspiring Game Developer</h3>
 
 <br/>
 
@@ -11,9 +11,7 @@
     <td valign="top" width="33%">
       <h2>👤 About Me</h2>
       <ul>
-        <li>🎓 Final semester CS student</li>
-        <li>🏢 Intern @ Itaú Unibanco</li>
-        <li>🎮 Exploring game dev, AI, and cool stuff</li>
+        <li>🎮 Exploring game dev, AI, and web</li>
         <li>🤖 Currently building <b>AI Buddy</b>, my personal assistant</li>
       </ul>
     </td>
