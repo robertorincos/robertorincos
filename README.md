@@ -1,7 +1,11 @@
 <div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00FF00&background=0A0A0A&center=true&vCenter=true&random=false&width=580&height=80&lines=%3E+WELCOME%2C+I+AM+TERBORO;%3E+DEVELOPER+%7C+CREATOR;%3E+BUILDING+THE+FUTURE" alt="Terminal Typing" />
+</div>
+
+<div align="center">
   <img width="150" alt="logoT" src="https://github.com/user-attachments/assets/8940e13c-1f15-4296-9be0-7b64067c4858" />
 </div>
-<h1 align="center">Hi there, I'm <a href="https://www.linkedin.com/in/robertorincosilveira/" target="_blank">Terboro</a></h1>
+<!-- <h1 align="center">Hi there, I'm <a href="https://www.linkedin.com/in/robertorincosilveira/" target="_blank">Terboro</a></h1> -->
 <table align="center">
   <tr>
     <!-- ABOUT ME -->
