@@ -1,100 +1,52 @@
-<svg width="600" height="200" xmlns="http://www.w3.org/2000/svg">
+<svg width="600" height="120" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=VT323&amp;display=swap');
-      
-      .terminal-bg {
-        fill: #0a0a0a;
-        filter: drop-shadow(0 0 20px rgba(0, 255, 0, 0.3));
-      }
-      
-      .screen-bg {
-        fill: #000000;
-      }
-      
-      .terminal-text {
-        font-family: 'VT323', monospace;
-        font-size: 32px;
+      .terminal-bg { fill: #0a0a0a; }
+      .screen-bg { fill: #000000; }
+      .screen-border { fill: none; stroke: #00ff00; stroke-width: 2; opacity: 0.3; }
+      .terminal-text { 
+        font-family: 'Courier New', monospace;
+        font-size: 28px;
         fill: #00ff00;
-        filter: drop-shadow(0 0 5px #00ff00) drop-shadow(0 0 10px #00ff00);
-        letter-spacing: 2px;
+        font-weight: bold;
       }
-      
-      .cursor {
-        fill: #00ff00;
-        filter: drop-shadow(0 0 5px #00ff00);
-        animation: blink 0.8s infinite;
-      }
-      
-      @keyframes blink {
-        0%, 49% { opacity: 1; }
-        50%, 100% { opacity: 0; }
-      }
-      
-      .scanline {
-        fill: url(#scanline-gradient);
-        opacity: 0.1;
-        animation: scanline-move 8s linear infinite;
-      }
-      
-      @keyframes scanline-move {
-        0% { transform: translateY(0); }
-        100% { transform: translateY(4px); }
-      }
-      
-      .glow-effect {
-        fill: none;
-        stroke: #00ff00;
-        stroke-width: 2;
-        opacity: 0.3;
-        animation: glow 3s ease-in-out infinite alternate;
-      }
-      
-      @keyframes glow {
-        0% { opacity: 0.2; }
-        100% { opacity: 0.4; }
-      }
-      
-      .typing-text {
-        animation: typing 2s steps(20) infinite;
-      }
-      
-      @keyframes typing {
-        0%, 100% { opacity: 1; }
-        50% { opacity: 1; }
-      }
+      .glow { filter: url(#glow); }
+      .cursor { fill: #00ff00; }
     </style>
     
-    <linearGradient id="scanline-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#000000;stop-opacity:0" />
-      <stop offset="50%" style="stop-color:#00ff00;stop-opacity:0.2" />
-      <stop offset="100%" style="stop-color:#000000;stop-opacity:0" />
-    </linearGradient>
-    
-    <filter id="crt-effect">
-      <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="1" result="noise"/>
-      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" xChannelSelector="R" yChannelSelector="G"/>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
     </filter>
   </defs>
   
-  <!-- Container with rounded corners -->
-  <rect class="terminal-bg" x="10" y="10" width="580" height="180" rx="20" ry="20"/>
+  <!-- Terminal container -->
+  <rect class="terminal-bg" x="5" y="5" width="590" height="110" rx="15"/>
   
-  <!-- Screen area -->
-  <rect class="screen-bg" x="30" y="30" width="540" height="140" rx="10" ry="10" filter="url(#crt-effect)"/>
+  <!-- Screen -->
+  <rect class="screen-bg" x="20" y="20" width="560" height="80" rx="8"/>
+  <rect class="screen-border" x="20" y="20" width="560" height="80" rx="8"/>
   
-  <!-- Glow effect border -->
-  <rect class="glow-effect" x="30" y="30" width="540" height="140" rx="10" ry="10"/>
-  
-  <!-- Scanline effect -->
-  <rect class="scanline" x="30" y="30" width="540" height="140"/>
-  
-  <!-- Terminal text -->
-  <text class="terminal-text typing-text" x="50" y="110">
-    WELCOME, I AM TERBORO
-    <animate attributeName="opacity" values="0;1;1;1" keyTimes="0;0.1;0.9;1" dur="3s" repeatCount="indefinite"/>
+  <!-- Terminal prompt -->
+  <text class="terminal-text glow" x="35" y="65">
+    &gt; WELCOME, I AM TERBORO
   </text>
   
-  <!-- Blinking cursor -->
-  <rect class="cursor" x="520" y="82" width="10" height="32"/>
+  <!-- Cursor -->
+  <rect class="cursor glow" x="420" y="45" width="12" height="24">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Scanlines effect -->
+  <rect x="20" y="20" width="560" height="80" rx="8" fill="url(#scanlines)" opacity="0.05"/>
+  
+  <defs>
+    <pattern id="scanlines" x="0" y="0" width="1" height="4" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="1" height="2" fill="#00ff00"/>
+      <rect x="0" y="2" width="1" height="2" fill="#000000"/>
+    </pattern>
+  </defs>
 </svg>
