@@ -31,7 +31,7 @@
       <h2>📁 Projects</h2>
       <ul>
         <li>🌐 <a href="https://gameaten.terboro.com"><b>GamEaten</b></a>: Social network for gamers</li>
-        <li>🌐 <a href="https://wii.terboro.com"><b>Hub Terboro</b></a>: The hub for my projects</li>
+        <li>🌐 <a href="https://terboro.com"><b>Hub Terboro</b></a>: The hub for my projects</li>
         <li>🎲 Indie Games: Unity & C++ (soon on itch.io)</li>
       </ul>
     </td>
